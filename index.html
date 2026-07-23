@@ -62,9 +62,26 @@
             <tr><td>毛片/球頭</td><td>一級鴨毛 / 複合軟木</td></tr>
         </table>
 
-        <!-- 🔗 安全跳轉按鈕 -->
+      <!-- 🔗 安全跳轉按鈕（已更換為相容性最高的 Google 官方長網址） -->
         <div class="btn-container">
-            <button onclick="safeRedirect('https://forms.gle')" class="btn btn-form">👉 點我填寫訂購單</button>
+            <button onclick="safeRedirect('https://google.com')" class="btn btn-form">👉 點我填寫訂購單</button>
+            <button onclick="safeRedirect('https://line.me')" class="btn btn-line">💬 LINE 詢問 / 團購</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 突破 GitHub 安全限制並確保瀏覽器允許新分頁跳轉
+    function safeRedirect(url) {
+        var win = window.open(url, '_blank');
+        if (win) {
+            win.focus();
+        } else {
+            // 如果被瀏覽器阻擋彈出視窗，強制在原分頁開啟
+            window.location.href = url;
+        }
+    }
+</script>
             <button onclick="safeRedirect('https://line.me')" class="btn btn-line">💬 LINE 詢問 / 團購</button>
         </div>
     </div>
