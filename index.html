@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文杰 WENJIE NO.102 中高階比賽羽毛球（77速）</title>
     
-    <!-- 🏸 加上分頁小羽球圖標 -->
+    <!-- 加上分頁小羽球圖標 -->
     <link rel="icon" href="https://fav.farm🏸" />
     
     <style>
@@ -21,15 +21,26 @@
         .features h3, .specs-table-title { font-size: 18px; border-bottom: 2px solid #eee; padding-bottom: 8px; }
         .feature-item { margin-bottom: 12px; font-size: 14px; }
         .feature-title { font-weight: bold; display: block; color: #111; }
-        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
+        .specs-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; font-size: 14px; }
         .specs-table td { padding: 8px; border-bottom: 1px solid #eee; }
         .specs-table td:first-child { font-weight: bold; color: #666; width: 35%; }
-        /* 安全跳轉按鈕樣式 */
-        .btn-container { display: flex; flex-direction: column; gap: 12px; }
-        .btn { display: flex; align-items: center; justify-content: center; padding: 15px; font-size: 16px; font-weight: bold; border-radius: 8px; cursor: pointer; border: none; width: 100%; text-decoration: none; }
+        
+        /* 100% 絕對不被阻擋的純超連結按鈕樣式 */
+        .btn-container { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
+        .btn { 
+            display: block; 
+            text-align: center; 
+            padding: 16px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            width: 100%;
+        }
         .btn-form { background-color: #FFD700; color: #111; }
         .btn-line { background-color: #06C755; color: #fff; }
-        .btn .icon { margin-right: 8px; }
     </style>
 </head>
 <body>
@@ -59,40 +70,16 @@
             <tr><td>品牌</td><td>文杰 WENJIE</td></tr>
             <tr><td>型號</td><td>NO.102</td></tr>
             <tr><td>級別</td><td>中高階比賽/訓練</td></tr>
-            <tr><td>毛片/球頭</td><td>一級鴨毛 / 複合軟木</td></tr>
+            <tr><td>毛片/球頭</td><td>精選一級鴨毛 / 複合軟木</td></tr>
         </table>
 
-      <!-- 🔗 安全跳轉按鈕（已更換為相容性最高的 Google 官方長網址） -->
+        <!-- 🔗 純 HTML 超連結（絕不被瀏覽器與 GitHub 攔截） -->
         <div class="btn-container">
-            <button onclick="safeRedirect('https://google.com')" class="btn btn-form">👉 點我填寫訂購單</button>
-            <button onclick="safeRedirect('https://line.me')" class="btn btn-line">💬 LINE 詢問 / 團購</button>
+            <a href="https://google.com" class="btn btn-form">👉 點我填寫訂購單</a>
+            <a href="https://line.me" class="btn btn-line">💬 LINE 詢問 / 團購</a>
         </div>
     </div>
 </div>
-
-<script>
-    // 突破 GitHub 安全限制並確保瀏覽器允許新分頁跳轉
-    function safeRedirect(url) {
-        var win = window.open(url, '_blank');
-        if (win) {
-            win.focus();
-        } else {
-            // 如果被瀏覽器阻擋彈出視窗，強制在原分頁開啟
-            window.location.href = url;
-        }
-    }
-</script>
-            <button onclick="safeRedirect('https://line.me')" class="btn btn-line">💬 LINE 詢問 / 團購</button>
-        </div>
-    </div>
-</div>
-
-<script>
-    // 突破 GitHub 安全限制
-    function safeRedirect(url) {
-        window.open(url, '_blank');
-    }
-</script>
 
 </body>
 </html>
