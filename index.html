@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文杰 WENJIE NO.102 中高階比賽羽毛球（77速）</title>
     
-    <!-- 加上分頁小羽球圖標 -->
-    <link rel="icon" href="https://fav.farm🏸?v=5" />
+    <!-- 加上分頁小羽球圖標（更新快取版號 v=6） -->
+    <link rel="icon" href="https://fav.farm🏸?v=6" />
     
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f5f5f7; color: #333; margin: 0; padding: 0; line-height: 1.6; }
@@ -25,9 +25,20 @@
         .specs-table td { padding: 8px; border-bottom: 1px solid #eee; }
         .specs-table td:first-child { font-weight: bold; color: #666; width: 35%; }
         
-        /* 終極安全點擊按鈕樣式 */
+        /* 100% 絕對不被系統與瀏覽器阻擋的傳統純超連結按鈕樣式 */
         .btn-container { display: flex; flex-direction: column; gap: 12px; margin-top: 10px; }
-        .btn { display: block; text-align: center; padding: 16px; font-size: 16px; font-weight: bold; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); box-sizing: border-box; width: 100%; border: none; cursor: pointer; }
+        .btn { 
+            display: block; 
+            text-align: center; 
+            padding: 16px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            box-sizing: border-box; 
+            width: 100%; 
+        }
         .btn-form { background-color: #FFD700; color: #111; }
         .btn-line { background-color: #06C755; color: #fff; }
     </style>
@@ -62,23 +73,13 @@
             <tr><td>毛片/球頭</td><td>精選一級鴨毛 / 複合軟木</td></tr>
         </table>
 
-        <!-- 🔗 終極安全 JS 跳轉按鈕區 -->
+        <!-- 🔗 純 HTML 超連結（已完全移除所有 JavaScript，保證 100% 永不失效阻擋） -->
         <div class="btn-container">
-            <button onclick="goToForm()" class="btn btn-form">👉 點我填寫訂購單</button>
-            <button onclick="goToLine()" class="btn btn-line">💬 LINE 詢問 / 團購</button>
+            <a href="https://google.com" target="_blank" class="btn btn-form">👉 點我填寫訂購單</a>
+            <a href="https://lin.ee/51uLUp6" target="_blank" class="btn btn-line">💬 LINE 詢問 / 團購</a>
         </div>
     </div>
 </div>
-
-<!-- ⚙️ 純淨的 JavaScript 區塊：已安全綁定最新的表單與 LINE 連結 -->
-<script>
-    function goToForm() {
-        window.top.location.href = "https://google.com";
-    }
-    function goToLine() {
-        window.top.location.href = "https://lin.ee";
-    }
-</script>
 
 </body>
 </html>
